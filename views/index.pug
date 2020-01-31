@@ -17,32 +17,25 @@ block content
   main.container(role='main')
     .jumbotron
       h1 Home
-      p.lead
-        | Estás en la página Home
-      a.btn.btn-lg.btn-primary(href='#' role='button') Botón &raquo;
     .container
-    
+
     .row
-      .col-md-4
-        h2 Contenido
-        p
-          
-        p
-          a.btn.btn-secondary(href='#' role='button') Ver más &raquo;
-      .col-md-4
-        h2 Contenido
-        p
-        
-        p
-          a.btn.btn-secondary(href='#' role='button') Ver más &raquo;
-      .col-md-4
-        h2 Contenido
-        p
-          
-        p
-          a.btn.btn-secondary(href='#' role='button') Ver más &raquo;
-    hr
+      .col-md-12
+        form(action='/')
+         .form-group
+          label(for='nya')
+           strong Nombres y Apellidos
+          input#nya.form-control(type='text' aria-describedby='nyaHelp' placeholder='Ingresa tus Nombres y Apellidos', required)
+          small#nyaHelp.form-text.text-muted Por favor, Nombres y Apellidos Completos.
  
+         .form-group
+          label(for='email')
+           strong Email
+          input#email.form-control(type='email' aria-describedby='emailHelp' placeholder='Ingresa tu Email', required)
+          small#emailHelp.form-text.text-muted Tu correo activo.	
+		
+    hr
+
   footer
   .container
     div(align='center')
