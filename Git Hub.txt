@@ -1,0 +1,9 @@
+instalar git
+Abrir Git Bash
+cd d:/dentisalud --abrir directorio o ubicacion del proyecto
+ls -l  --listar archivos
+git add .
+git config --global user.email "juancarlos.cifuentes8@gmail.com"
+git commit -m 'primer commit'
+git remote add origin https://github.com/pch2020/Dentisalud-js.git
+git push -u origin master
